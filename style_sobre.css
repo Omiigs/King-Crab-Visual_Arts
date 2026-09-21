@@ -66,7 +66,7 @@ body{
 }
 
 .imagem-footer {
-    background-image: url(../imagens/footer.jpg);
+    background-image: url(imagens/footer.jpg);
     background-repeat: no-repeat;
     background-size:auto;
     background-position: 100%;

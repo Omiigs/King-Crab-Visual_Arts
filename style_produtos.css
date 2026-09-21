@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+
+body{
+    background-image: linear-gradient(to bottom, rgb(187, 255, 255), rgb(255, 255, 255));
+}
+header img{
+  height: 100px;
+  width: 100px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00ffff;
+  align-items: center;
+  border-radius: 30px;  
+
+  background: rgba(69, 233, 255, 0.23);
+  backdrop-filter: blur(39px) saturate(153%);
+  -webkit-backdrop-filter: blur(39px) saturate(153%);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 23px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+header h1{
+  font-family: "Spicy Rice", serif;
+  padding-right: 70px;
+  font-size: 40px;
+  color:rgb(255, 255, 255);
+}
+.menu-vertical-flutuante {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1000;
+
+
+  background: rgba(69, 233, 255, 0.23);
+  backdrop-filter: blur(39px) saturate(153%);
+  -webkit-backdrop-filter: blur(39px) saturate(153%);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 23px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.menu-vertical-flutuante a {
+  color: #00abc9;
+  padding: 50px 15px;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.menu-vertical-flutuante a:hover {
+  background-color: rgb(143, 248, 255);
+  border-radius: 4px;
+}
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    padding: 15px 25px;
+}
+
+
+/* PESQUISA */
+
+.pesquisa {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.pesquisa input {
+    width: 240px;
+    height: 30px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #dddddd;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+.pesquisa span {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+/* GRID DOS PRODUTOS */
+
+.produtos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px 25px;
+}
+
+
+/* CARD DO PRODUTO */
+
+.produto {
+    height: 200px;
+
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+
+    padding: 12px;
+
+    position: relative;
+
+    background-color: white;
+
+    transition: 0.2s;
+}
+
+
+/* PRIMEIRO PRODUTO SELECIONADO */
+
+.produto.destaque {
+    border-color: #55a9d5;
+}
+
+
+/* IMAGEM */
+
+.produto img {
+    width: 100%;
+    height: 125px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+
+/* NOME DO PRODUTO */
+
+.produto h2 {
+    font-size: 18px;
+
+    margin: 12px 0 0;
+
+    font-style: italic;
+}
+
+
+/* ESTRELA */
+
+.estrela {
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+
+    z-index: 2;
+
+    font-size: 25px;
+
+    color: #ffd900;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.produto:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.imagem-footer {
+    background-image: url(../imagens/footer.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: 100%;
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 5%;
+}
+
+.imagem-footer h2{
+    display: flex;
+    text-align: center;
+    padding-left: 40%;
+    color: aliceblue;
+    -webkit-text-stroke: 0.5px rgb(134, 221, 255);
+}

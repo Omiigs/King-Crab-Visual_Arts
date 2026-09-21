@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, rgb(187, 255, 255), rgb(255, 255, 255));
+}
+
+header img{
+  height: 100px;
+  width: 100px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00ffff;
+  align-items: center;
+  border-radius: 30px;  
+
+  background: rgba(69, 233, 255, 0.23);
+  backdrop-filter: blur(39px) saturate(153%);
+  -webkit-backdrop-filter: blur(39px) saturate(153%);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 23px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+header h1{
+  font-family: "Spicy Rice", serif;
+  padding-right: 70px;
+  font-size: 40px;
+  color:rgb(255, 255, 255);
+}
+.menu-vertical-flutuante {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1000;
+
+
+  background: rgba(69, 233, 255, 0.23);
+  backdrop-filter: blur(39px) saturate(153%);
+  -webkit-backdrop-filter: blur(39px) saturate(153%);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 23px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.menu-vertical-flutuante a {
+  color: #00abc9;
+  padding: 50px 15px;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.menu-vertical-flutuante a:hover {
+  background-color: rgb(143, 248, 255);
+  border-radius: 4px;
+}
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   ÁREA DO BLOG
+========================= */
+
+.blog {
+    width: 80%;
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   POST PRINCIPAL
+========================= */
+
+.post-principal {
+    width: 100%;
+    min-height: 230px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* IMAGEM PRINCIPAL */
+
+.imagem-principal {
+    width: 180px;
+    height: 180px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background-color: #e2e8f0;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo-principal {
+    padding: 20px;
+}
+
+.categoria {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #777777;
+
+    letter-spacing: 1px;
+}
+
+.conteudo-principal h1 {
+    font-size: 27px;
+
+    color: #222222;
+
+    margin: 8px 0;
+}
+
+.conteudo-principal p {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #666666;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #222222;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 8px 15px;
+
+    border: 1px solid #bbbbbb;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #222222;
+
+    color: white;
+}
+
+
+/* =========================
+   POSTS MENORES
+========================= */
+
+.posts {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.post {
+    background-color: #f7f7f7;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    overflow: hidden;
+}
+
+
+/* IMAGEM DOS CARDS */
+
+.imagem-post {
+    width: 100%;
+    height: 150px;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    background-color: #e2e8f0;
+
+    margin-bottom: 15px;
+}
+
+.imagem-post img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+/* EFEITO NAS IMAGENS */
+
+.post:hover .imagem-post img {
+    transform: scale(1.05);
+}
+
+
+/* TEXTO DOS CARDS */
+
+.conteudo-post h2 {
+    font-size: 18px;
+
+    color: #222222;
+
+    margin: 7px 0;
+}
+
+.conteudo-post p {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .blog {
+        width: 90%;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .post-principal {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .imagem-principal {
+        width: 100%;
+        height: 220px;
+    }
+
+    .conteudo-principal {
+        padding: 15px 5px 5px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .blog {
+        width: 95%;
+
+        margin: 20px auto;
+    }
+
+    .imagem-principal {
+        height: 180px;
+    }
+
+    .conteudo-principal h1 {
+        font-size: 22px;
+    }
+
+    .imagem-post {
+        height: 180px;
+    }
+}
+
+.imagem-footer {
+    background-image: url(../imagens/footer.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: 100%;
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 5%;
+}
+
+.imagem-footer h2{
+    display: flex;
+    text-align: center;
+    padding-left: 40%;
+    color: aliceblue;
+    -webkit-text-stroke: 0.5px rgb(134, 221, 255);
+}

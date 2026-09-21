@@ -183,7 +183,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .imagem-footer {
-    background-image: url(../imagens/footer.jpg);
+    background-image: url(imagens/footer.jpg);
     background-repeat: no-repeat;
     background-size:auto;
     background-position: 100%;

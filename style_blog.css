@@ -227,6 +227,8 @@ body {
     padding: 15px;
 
     overflow: hidden;
+
+   
 }
 
 
@@ -242,7 +244,7 @@ body {
 
     background-color: #e2e8f0;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .imagem-post img {
@@ -338,22 +340,32 @@ body {
 }
 
 .imagem-footer {
-    background-image: url(imagens/footer.jpg);
-    background-repeat: no-repeat;
-    background-size:auto;
-    background-position: 100%;
     width: 70%;
     height: 100px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    background-image: url("imagens/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
-    justify-items: center;
-    padding-top: 5%;
+    align-items: center;
+
+    box-sizing: border-box;
 }
 
-.imagem-footer h2{
-    display: flex;
+.imagem-footer h2 {
+    margin: 0;
+    padding: 0;
+
+    color: white;
     text-align: center;
-    padding-left: 40%;
-    color: aliceblue;
+    font-size: 18px;
+
     -webkit-text-stroke: 0.5px rgb(134, 221, 255);
 }
+
